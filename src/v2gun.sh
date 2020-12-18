@@ -670,7 +670,8 @@ get_caddy() {
   if [ ! -f "/usr/local/bin/caddy" ]; then
     colorEcho ${BLUE} "Caddy 2 is not installed. start installation"
 
-    local caddy_link="https://github.com/charlieethan/build/releases/download/v2.2.1/caddy-linux-${CY_MACHINE}"
+    #local caddy_link="https://github.com/charlieethan/build/releases/download/v2.2.1/caddy-linux-${CY_MACHINE}"
+    local caddy_link="https://github.com/mixool/caddys/raw/master/caddy"
 
     ${sudoCmd} $(which mkdir) -p "/usr/local/etc/caddy"
     printf "Cretated: %s\n" "/usr/local/etc/caddy"
